@@ -1,5 +1,5 @@
 Instance: Patient2
-InstanceOf: $us-core-patient
+InstanceOf: $mcode-cancer-patient
 Usage: #inline
 * identifier
   * use = #usual

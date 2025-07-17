@@ -31,3 +31,4 @@ Alias: $mcode-cancer-stage = http://hl7.org/fhir/us/mcode/StructureDefinition/mc
 Alias: $mcode-tumor-marker-test = http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-marker-test
 Alias: $mcode-tumor-size = http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-size
 Alias: $mcode-primary-cancer-condition = http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition
+Alias: $mcode-cancer-patient = http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient

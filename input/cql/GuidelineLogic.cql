@@ -54,18 +54,18 @@ define "Is at least T1c":
 
 define "Is ER negative":
   First(
-    [Observation: "ERStatus Code"] ER 
+    [Observation: "ERStatus Code"] ER
       where ER.status = 'final' sort by issued descending
   ).value ~ "Negative Status Code"
 
 define "Is PR negative":
   First(
-    [Observation: "PRStatus Code"] ER 
+    [Observation: "PRStatus Code"] ER
       where ER.status = 'final' sort by issued descending
   ).value ~ "Negative Status Code"
 
 define "Is HER2 negative":
   First(
-    [Observation: "HER2Status Code"] ER 
+    [Observation: "HER2Status Code"] ER
       where ER.status = 'final' sort by issued descending
   ).value ~ "Negative Status Code"

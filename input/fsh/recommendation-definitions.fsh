@@ -9,7 +9,7 @@ Usage: #definition
 * description = """
 Example of a breast cancer pathway definition. All this content is for example
 only, and an oversimplification of actual guidance. Here there are few
-strategies that would most likely be structured for each line of therapy. 
+strategies that would most likely be structured for each line of therapy.
 """
 * action[+]
   * title = "Neoadjuvant Strategy"
@@ -58,7 +58,7 @@ Patients with TNBC who have clinically node positive and/or at least T1c disease
 should be offered an anthracycline- and taxane-containing regimen in the
 neoadjuvant setting.
 """
-* library = Canonical(GuidelineLogic)
+* library = Canonical(GuidelineLogic|0.1.0)
 * action[+]
   * title = "TNBC (Triple Negative Breast Cancer)"
   * id = "TNBC (Triple Negative Breast Cancer)"
