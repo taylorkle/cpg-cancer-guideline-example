@@ -4,26 +4,30 @@ using FHIR version '4.0.1'
 
 include FHIRHelpers version '4.0.1'
 
-codesystem "LOINC": 'http://loinc.org'
+include IsTNBCFeatureLogic version '0.1.0' called IsTNBCFeature
+include IsT1cFeatureLogic version '0.1.0' called IsT1cFeature
+
 codesystem "Condition Clinical Status Codesystem": 'http://terminology.hl7.org/CodeSystem/condition-clinical'
 codesystem "Condition Verification Status Codesystem": 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
 
 code "Active Condition Code": 'active' from "Condition Clinical Status Codesystem"
 code "Confirmed Condition Code": 'confirmed' from "Condition Verification Status Codesystem"
 
-code "Tumor Size Code": '21889-1' from "LOINC"
-code "Size.maximum Code": '33728-7' from "LOINC"
-
-code "ERStatus Code": '85337-4' from "LOINC"
-code "PRStatus Code": '85339-0' from "LOINC"
-code "HER2Status Code": '48676-1' from "LOINC"
-
-code "Negative Status Code": 'LA6577-6' from "LOINC"
-code "Positive Status Code": 'LA6576-8' from "LOINC"
-
 valueset "Breast Cancer VS": 'http://example.org/cancer-guideline/fhir/ValueSet/BreastCancerICD10'
 
 context Patient
+
+define "Is TNBC":
+  if (IsTNBCFeature."Is TNBC" is not null) then
+    IsTNBCFeature."Is TNBC".value as boolean
+  else
+    null
+
+define "Is at least T1c":
+  if (IsT1cFeature."Is T1c" is not null) then
+    IsT1cFeature."Is T1c".value as boolean
+  else
+    null
 
 define "Has TNBC and at least T1c":
   "Is TNBC" and "Is at least T1c"
@@ -34,38 +38,3 @@ define "Has breast cancer":
       where C.clinicalStatus ~ "Active Condition Code"
       and C.verificationStatus ~ "Confirmed Condition Code"
   )
-
-define "Is TNBC":
-  "Is ER negative" and "Is PR negative" and "Is HER2 negative"
-
-
-define "Tumor Size":
-  [Observation: "Tumor Size Code"] TS where TS.status = 'final'
-
-define "Most Recent Tumor Size":
-  First("Tumor Size" TS sort by issued descending)
-
-define "Most Recent Tumor Size Quantity":
-  First("Most Recent Tumor Size".component C where C.code ~ "Size.maximum Code").value as Quantity
-
-define "Is at least T1c":
-  "Most Recent Tumor Size Quantity" > 1 'cm'
-
-
-define "Is ER negative":
-  First(
-    [Observation: "ERStatus Code"] ER
-      where ER.status = 'final' sort by issued descending
-  ).value ~ "Negative Status Code"
-
-define "Is PR negative":
-  First(
-    [Observation: "PRStatus Code"] ER
-      where ER.status = 'final' sort by issued descending
-  ).value ~ "Negative Status Code"
-
-define "Is HER2 negative":
-  First(
-    [Observation: "HER2Status Code"] ER
-      where ER.status = 'final' sort by issued descending
-  ).value ~ "Negative Status Code"

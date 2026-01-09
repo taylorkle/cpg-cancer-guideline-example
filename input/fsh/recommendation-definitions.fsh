@@ -70,16 +70,10 @@ neoadjuvant setting.
 """
   * input[+]
     * type = #Observation
-    * profile = Canonical(PRStatus)
+    * profile = Canonical(IsTNBCFeature)
   * input[+]
     * type = #Observation
-    * profile = Canonical(ERStatus)
-  * input[+]
-    * type = #Observation
-    * profile = Canonical(HER2Status)
-  * input[+]
-    * type = #Observation
-    * profile = $mcode-tumor-size
+    * profile = Canonical(IsT1cFeature)
   * input[+]
     * type = #Condition
     * profile = $mcode-primary-cancer-condition

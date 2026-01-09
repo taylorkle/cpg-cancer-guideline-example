@@ -22,11 +22,11 @@ Usage: #inline
 * method = $SCT#787377000 "Gross examination and sampling of tissue specimen (procedure)"
 * component[tumorLongestDimension]
   * code = $LOINC#33728-7
-  * valueQuantity = 0.1 'cm' "centimeters"
+  * valueQuantity = 1.2 'cm' "centimeters"
 
 Instance: ExampleCasePatient1
 InstanceOf: Bundle
-Description: "Patient has < 0.5 cm tumor size"
+Description: "Patient has > 1 cm tumor size"
 Usage: #example
 * type = #collection
 * meta.tag = #test

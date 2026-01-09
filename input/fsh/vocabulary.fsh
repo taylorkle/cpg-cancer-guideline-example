@@ -29,8 +29,6 @@ Description: "This ValueSet includes ICD-10 codes for breast cancer."
 * $ICD10CM#C50.912 "Malignant neoplasm of unspecified site of left female breast"
 * $ICD10CM#C50.919 "Malignant neoplasm of unspecified site of unspecified female breast"
 
-ValueSet: TumorStatusVS
-Title: "Tumor Status ValueSet"
-Description: "This ValueSet includes codes for tumor status."
-* $LOINC#LA6577-6 "Negative"
-* $LOINC#LA6576-8 "Positive"
+CodeSystem: CaseFeatureCodes
+* #is-tnbc "Is TNBC Feature"
+* #is-t1c "Is T1c Feature"
