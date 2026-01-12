@@ -58,6 +58,10 @@ Patients with TNBC who have clinically node positive and/or at least T1c disease
 should be offered an anthracycline- and taxane-containing regimen in the
 neoadjuvant setting.
 """
+* relatedArtifact[+]
+  * type = #citation
+  * citation = "American Society of Clinical Oncology. Neoadjuvant chemotherapy, endocrine therapy, and targeted therapy for breast cancer. Published April 12, 2022. Updated January 7, 2026. Accessed January 12, 2026. https://www.asco.org"
+  * url = "https://ascopubs.org/doi/full/10.1200/JCO.20.03399"
 * library = Canonical(GuidelineLogic|0.1.0)
 * action[+]
   * title = "TNBC (Triple Negative Breast Cancer)"
