@@ -30,6 +30,7 @@ dependencies:
   hl7.fhir.uv.cpg: current
   hl7.fhir.uv.crmi: current
   hl7.fhir.uv.sdc: dev
+  hl7.fhir.uv.cql: 2.0.0
 
 #   hl7.fhir.us.core: 3.1.0
 #   hl7.fhir.us.mcode:

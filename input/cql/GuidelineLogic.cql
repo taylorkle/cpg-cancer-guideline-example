@@ -2,7 +2,7 @@ library GuidelineLogic version '0.1.0'
 
 using FHIR version '4.0.1'
 
-include FHIRHelpers version '4.0.1'
+include hl7.fhir.uv.cql.FHIRHelpers version '4.0.1' called FHIRHelpers
 
 include IsTNBCFeatureLogic version '0.1.0' called IsTNBCFeature
 include IsT1cFeatureLogic version '0.1.0' called IsT1cFeature

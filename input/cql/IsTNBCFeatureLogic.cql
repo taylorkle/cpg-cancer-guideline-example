@@ -2,7 +2,7 @@ library IsTNBCFeatureLogic version '0.1.0'
 
 using FHIR version '4.0.1'
 
-include FHIRHelpers version '4.0.1'
+include hl7.fhir.uv.cql.FHIRHelpers version '4.0.1' called FHIRHelpers
 include Common version '0.1.0'
 
 codesystem "CaseFeatureCodes": 'http://example.org/cancer-guideline/fhir/CodeSystem/CaseFeatureCodes'
