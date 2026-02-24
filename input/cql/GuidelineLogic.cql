@@ -21,13 +21,13 @@ define "Is TNBC":
   if (IsTNBCFeature."Is TNBC" is not null) then
     IsTNBCFeature."Is TNBC".value as boolean
   else
-    null
+    false
 
 define "Is at least T1c":
   if (IsT1cFeature."Is T1c" is not null) then
     IsT1cFeature."Is T1c".value as boolean
   else
-    null
+    false
 
 define "Has TNBC and at least T1c":
   "Is TNBC" and "Is at least T1c"

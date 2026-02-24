@@ -5,10 +5,10 @@ RuleSet: BundleEntry(resourceType, id)
 
 Instance: PractitionerShared
 InstanceOf: Practitioner
-Usage: #inline
+Usage: #example
 * name.family = "practitionershared"
 
 Instance: OrganizationShared
 InstanceOf: Organization
-Usage: #inline
+Usage: #example
 * name = "organizationshared"

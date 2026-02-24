@@ -1,6 +1,6 @@
 Instance: Patient1
 InstanceOf: $mcode-cancer-patient
-Usage: #inline
+Usage: #example
 * identifier
   * use = #usual
   * type = $v2-0203#MR "Medical Record Number"
@@ -8,8 +8,10 @@ Usage: #inline
   * system = "http://hospital.smarthealthit.org"
   * value = "1032703"
 * gender = #female
-* name
+* birthDate = "1970-01-01"
+* name[0]
   * family = "Patient1"
+  * given[0] = "Doe"
 
 Instance: Patient1ObservationTumorSize
 InstanceOf: $mcode-tumor-size

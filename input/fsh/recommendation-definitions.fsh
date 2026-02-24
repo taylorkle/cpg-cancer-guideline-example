@@ -39,7 +39,10 @@ inflammatory breast cancer (IBC) or those with unresectable/locally advanced
 disease at presentation whose disease may be rendered resectable with
 neoadjuvant treatment.
 """
-* action
+* action[+]
+  * trigger
+    * type = #named-event
+    * name = "patient-view"
   * title = "Neoadjuvant Recommendation for TNBC patients"
   * id = "Neoadjuvant Recommendation for TNBC patients"
   * description = """
