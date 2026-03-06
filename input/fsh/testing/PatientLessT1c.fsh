@@ -28,7 +28,7 @@ Usage: #inline
 
 Instance: ExampleCasePatient1
 InstanceOf: Bundle
-Description: "Patient has > 1 cm tumor size"
+Description: "Patient has 1.2 cm tumor size"
 Usage: #example
 * type = #collection
 * meta.tag = #test

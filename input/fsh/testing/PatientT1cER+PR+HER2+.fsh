@@ -85,7 +85,7 @@ Usage: #example
 
 Instance: ExampleCasePatient3
 InstanceOf: Bundle
-Description: "Patient has 1.5 cm tumor size, ER/PR/HER2 positive"
+Description: "Patient is T1c and TNBC"
 Usage: #example
 * type = #collection
 * meta.tag = #test
