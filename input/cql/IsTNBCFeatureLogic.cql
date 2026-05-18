@@ -17,6 +17,8 @@ code "HER2Status Code": '48676-1' from "LOINC"
 code "Negative Status Code": 'LA6577-6' from "LOINC"
 code "Positive Status Code": 'LA6576-8' from "LOINC"
 
+context Patient
+
 define "Is ER negative":
   First(
     [Observation: "ERStatus Code"] ER

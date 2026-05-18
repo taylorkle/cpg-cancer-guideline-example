@@ -12,6 +12,8 @@ codesystem "LOINC": 'http://loinc.org'
 code "Tumor Size Code": '21889-1' from "LOINC"
 code "Size.maximum Code": '33728-7' from "LOINC"
 
+context Patient
+
 define "Tumor Size":
   [Observation: "Tumor Size Code"] TS where TS.status = 'final'
 
