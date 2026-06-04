@@ -6,6 +6,7 @@ Thumbs.db
 /input-cache
 /output/*
 !/output/**/*.json
-/temp
+/temp/*
+!/temp/**/*.json
 /template
 /node_modules
