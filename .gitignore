@@ -4,7 +4,8 @@ Thumbs.db
 /input/vocabulary
 /fsh-generated
 /input-cache
-/output
+/output/*
+!/output/**/*.json
 /temp
 /template
 /node_modules

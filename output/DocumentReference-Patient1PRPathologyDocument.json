@@ -1,0 +1,38 @@
+{
+  "resourceType" : "DocumentReference",
+  "id" : "Patient1PRPathologyDocument",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference Patient1PRPathologyDocument</b></p><a name=\"Patient1PRPathologyDocument\"> </a><a name=\"hcPatient1PRPathologyDocument\"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 11526-1}\">Pathology study</span></p><p><b>category</b>: <span title=\"Codes:{http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category clinical-note}\">Clinical Note</span></p><p><b>subject</b>: <a href=\"Patient-Patient1.html\">Doe Patient1  Female, DoB: 1970-01-01 ( Medical Record Number:\u00a01032703\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>date</b>: 2026-05-18 11:37:00-0400</p><p><b>author</b>: <a href=\"Practitioner-PractitionerShared.html\">Practitioner practitionershared </a></p><p><b>description</b>: Breast pathology progesterone receptor report</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Data</b></td><td><b>Title</b></td></tr><tr><td style=\"display: none\">*</td><td>text/plain</td><td><code>UGF0aG9sb2d5IGJpb21hcmtlciByZXBvcnQ6IFByb2dlc3Rlcm9uZSByZWNlcHRvciAoUFIpIGlzIG5lZ2F0aXZlIGluIHRoZSB0dW1vciBzYW1wbGUu</code></td><td>PR pathology report</td></tr></table></blockquote></div>"
+  },
+  "status" : "current",
+  "type" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "11526-1",
+      "display" : "Pathology study"
+    }]
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+      "code" : "clinical-note",
+      "display" : "Clinical Note"
+    }]
+  }],
+  "subject" : {
+    "reference" : "Patient/Patient1"
+  },
+  "date" : "2026-05-18T11:37:00-04:00",
+  "author" : [{
+    "reference" : "Practitioner/PractitionerShared"
+  }],
+  "description" : "Breast pathology progesterone receptor report",
+  "content" : [{
+    "attachment" : {
+      "contentType" : "text/plain",
+      "data" : "UGF0aG9sb2d5IGJpb21hcmtlciByZXBvcnQ6IFByb2dlc3Rlcm9uZSByZWNlcHRvciAoUFIpIGlzIG5lZ2F0aXZlIGluIHRoZSB0dW1vciBzYW1wbGUu",
+      "title" : "PR pathology report"
+    }
+  }]
+}

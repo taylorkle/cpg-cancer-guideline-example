@@ -1,0 +1,32 @@
+{
+  "resourceType" : "DiagnosticReport",
+  "id" : "Patient1HER2PathologyReport",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport Patient1HER2PathologyReport</b></p><a name=\"Patient1HER2PathologyReport\"> </a><a name=\"hcPatient1HER2PathologyReport\"> </a><h2><span title=\"Codes:{http://loinc.org 48676-1}\">HER2 [Interpretation] in Tissue</span> (<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 LAB}\">Laboratory</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Doe Patient1  Female, DoB: 1970-01-01 ( Medical Record Number:\u00a01032703\u00a0(use:\u00a0usual,\u00a0))</td></tr><tr><td>When For</td><td>2026-05-18 11:00:00-0400</td></tr><tr><td>Reported</td><td>2026-05-18 11:30:00-0400</td></tr><tr><td>Performer</td><td> <a href=\"Practitioner-PractitionerShared.html\">Practitioner practitionershared </a></td></tr></table><p><b>Report Details</b></p><p>Pathology biomarker testing shows HER2 is negative (1+ by immunohistochemistry), with no evidence of HER2 overexpression or amplification.</p></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+      "code" : "LAB",
+      "display" : "Laboratory"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "48676-1",
+      "display" : "HER2 [Interpretation] in Tissue"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/Patient1"
+  },
+  "effectiveDateTime" : "2026-05-18T11:00:00-04:00",
+  "issued" : "2026-05-18T11:30:00-04:00",
+  "performer" : [{
+    "reference" : "Practitioner/PractitionerShared"
+  }],
+  "conclusion" : "Pathology biomarker testing shows HER2 is negative (1+ by immunohistochemistry), with no evidence of HER2 overexpression or amplification."
+}

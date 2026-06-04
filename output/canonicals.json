@@ -1,0 +1,133 @@
+[{
+  "id" : "CyclophosphamideOrder",
+  "type" : "ActivityDefinition",
+  "url" : "http://example.org/cancer-guideline/fhir/ActivityDefinition/CyclophosphamideOrder",
+  "version" : "0.1.0"
+},
+{
+  "id" : "DoxorubicinOrder",
+  "type" : "ActivityDefinition",
+  "url" : "http://example.org/cancer-guideline/fhir/ActivityDefinition/DoxorubicinOrder",
+  "version" : "0.1.0"
+},
+{
+  "id" : "PaclitaxelOrder",
+  "type" : "ActivityDefinition",
+  "url" : "http://example.org/cancer-guideline/fhir/ActivityDefinition/PaclitaxelOrder",
+  "version" : "0.1.0"
+},
+{
+  "id" : "CaseFeatureCodes",
+  "type" : "CodeSystem",
+  "url" : "http://example.org/cancer-guideline/fhir/CodeSystem/CaseFeatureCodes",
+  "version" : "0.1.0",
+  "name" : "CaseFeatureCodes"
+},
+{
+  "id" : "fhir.cancer-guideline.example",
+  "type" : "ImplementationGuide",
+  "url" : "http://example.org/cancer-guideline/fhir/ImplementationGuide/fhir.cancer-guideline.example",
+  "version" : "0.1.0",
+  "name" : "OncologyGuidelineExample"
+},
+{
+  "id" : "Common",
+  "type" : "Library",
+  "url" : "http://example.org/cancer-guideline/fhir/Library/Common",
+  "version" : "0.1.0",
+  "name" : "Common"
+},
+{
+  "id" : "GuidelineLogic",
+  "type" : "Library",
+  "url" : "http://example.org/cancer-guideline/fhir/Library/GuidelineLogic",
+  "version" : "0.1.0",
+  "name" : "GuidelineLogic"
+},
+{
+  "id" : "IsT1cFeatureLogic",
+  "type" : "Library",
+  "url" : "http://example.org/cancer-guideline/fhir/Library/IsT1cFeatureLogic",
+  "version" : "0.1.0",
+  "name" : "IsT1cFeatureLogic"
+},
+{
+  "id" : "IsTNBCFeatureLogic",
+  "type" : "Library",
+  "url" : "http://example.org/cancer-guideline/fhir/Library/IsTNBCFeatureLogic",
+  "version" : "0.1.0",
+  "name" : "IsTNBCFeatureLogic"
+},
+{
+  "id" : "ACfollowedByTRegimen",
+  "type" : "PlanDefinition",
+  "url" : "http://example.org/cancer-guideline/fhir/PlanDefinition/ACfollowedByTRegimen",
+  "version" : "0.1.0"
+},
+{
+  "id" : "BreastCancerPathway",
+  "type" : "PlanDefinition",
+  "url" : "http://example.org/cancer-guideline/fhir/PlanDefinition/BreastCancerPathway",
+  "version" : "0.1.0"
+},
+{
+  "id" : "NeoadjuvantStrategy",
+  "type" : "PlanDefinition",
+  "url" : "http://example.org/cancer-guideline/fhir/PlanDefinition/NeoadjuvantStrategy",
+  "version" : "0.1.0"
+},
+{
+  "id" : "TNBCNeoadjuvantRecommendation",
+  "type" : "PlanDefinition",
+  "url" : "http://example.org/cancer-guideline/fhir/PlanDefinition/TNBCNeoadjuvantRecommendation",
+  "version" : "0.1.0"
+},
+{
+  "id" : "ERStatus",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/cancer-guideline/fhir/StructureDefinition/ERStatus",
+  "version" : "0.1.0",
+  "name" : "ERStatus"
+},
+{
+  "id" : "HER2Status",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/cancer-guideline/fhir/StructureDefinition/HER2Status",
+  "version" : "0.1.0",
+  "name" : "HER2Status"
+},
+{
+  "id" : "IsT1cFeature",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/cancer-guideline/fhir/StructureDefinition/IsT1cFeature",
+  "version" : "0.1.0",
+  "name" : "IsT1cFeature"
+},
+{
+  "id" : "IsTNBCFeature",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/cancer-guideline/fhir/StructureDefinition/IsTNBCFeature",
+  "version" : "0.1.0",
+  "name" : "IsTNBCFeature"
+},
+{
+  "id" : "PRStatus",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/cancer-guideline/fhir/StructureDefinition/PRStatus",
+  "version" : "0.1.0",
+  "name" : "PRStatus"
+},
+{
+  "id" : "BreastCancerICD10",
+  "type" : "ValueSet",
+  "url" : "http://example.org/cancer-guideline/fhir/ValueSet/BreastCancerICD10",
+  "version" : "0.1.0",
+  "name" : "BreastCancerICD10"
+},
+{
+  "id" : "FHIRHelpers",
+  "type" : "Library",
+  "url" : "http://hl7.org/fhir/FHIRHelpers",
+  "version" : "0.1.0",
+  "name" : "FHIRHelpers"
+}]

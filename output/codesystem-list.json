@@ -1,0 +1,10 @@
+{
+  "codeSystems" : [{
+    "url" : "http://example.org/cancer-guideline/fhir/CodeSystem/CaseFeatureCodes",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "CaseFeatureCodes",
+    "title" : null,
+    "description" : ""
+  }]
+}

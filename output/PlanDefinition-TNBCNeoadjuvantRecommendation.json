@@ -1,0 +1,71 @@
+{
+  "resourceType" : "PlanDefinition",
+  "id" : "TNBCNeoadjuvantRecommendation",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategydefinition"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception generating Narrative: unexpected non-end of element null::a  at line 120 column 37</b></p></div>"
+  },
+  "url" : "http://example.org/cancer-guideline/fhir/PlanDefinition/TNBCNeoadjuvantRecommendation",
+  "version" : "0.1.0",
+  "title" : "TNBC Neoadjuvant Recommendation",
+  "type" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+      "code" : "workflow-definition"
+    }]
+  },
+  "status" : "active",
+  "date" : "2026-05-19T11:49:39-04:00",
+  "publisher" : "Example Publisher",
+  "contact" : [{
+    "name" : "Example Publisher",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "Patients with TNBC who have clinically node positive and/or at least T1c disease\nshould be offered an anthracycline- and taxane-containing regimen in the\nneoadjuvant setting.",
+  "relatedArtifact" : [{
+    "type" : "citation",
+    "citation" : "American Society of Clinical Oncology. Neoadjuvant chemotherapy, endocrine therapy, and targeted therapy for breast cancer. Published April 12, 2022. Updated January 7, 2026. Accessed January 12, 2026. https://www.asco.org",
+    "url" : "https://ascopubs.org/doi/full/10.1200/JCO.20.03399",
+    "document" : {
+      "url" : "https://ascopubs.org/doi/full/10.1200/JCO.20.03399"
+    }
+  }],
+  "library" : ["http://example.org/cancer-guideline/fhir/Library/GuidelineLogic|0.1.0"],
+  "action" : [{
+    "id" : "TNBC (Triple Negative Breast Cancer)",
+    "title" : "TNBC (Triple Negative Breast Cancer)",
+    "description" : "Patients with TNBC who have clinically node positive and/or at least T1c disease\nshould be offered an anthracycline- and taxane-containing regimen in the\nneoadjuvant setting.",
+    "code" : [{
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
+        "code" : "guideline-based-care"
+      }]
+    }],
+    "condition" : [{
+      "kind" : "applicability",
+      "expression" : {
+        "language" : "text/cql-identifier",
+        "expression" : "Has TNBC and at least T1c"
+      }
+    }],
+    "input" : [{
+      "type" : "Observation",
+      "profile" : ["http://example.org/cancer-guideline/fhir/StructureDefinition/IsTNBCFeature"]
+    },
+    {
+      "type" : "Observation",
+      "profile" : ["http://example.org/cancer-guideline/fhir/StructureDefinition/IsT1cFeature"]
+    },
+    {
+      "type" : "Condition",
+      "profile" : ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition"]
+    }],
+    "definitionCanonical" : "http://example.org/cancer-guideline/fhir/PlanDefinition/ACfollowedByTRegimen"
+  }]
+}

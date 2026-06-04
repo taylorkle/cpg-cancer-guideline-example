@@ -1,0 +1,11 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "PractitionerShared",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner PractitionerShared</b></p><a name=\"PractitionerShared\"> </a><a name=\"hcPractitionerShared\"> </a><p><b>name</b>: practitionershared </p></div>"
+  },
+  "name" : [{
+    "family" : "practitionershared"
+  }]
+}

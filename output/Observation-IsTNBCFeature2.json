@@ -1,0 +1,26 @@
+{
+  "resourceType" : "Observation",
+  "id" : "IsTNBCFeature2",
+  "meta" : {
+    "profile" : ["http://example.org/cancer-guideline/fhir/StructureDefinition/IsTNBCFeature"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation IsTNBCFeature2</b></p><a name=\"IsTNBCFeature2\"> </a><a name=\"hcIsTNBCFeature2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IsTNBCFeature.html\">IsTNBCFeature</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://example.org/cancer-guideline/fhir/CodeSystem/CaseFeatureCodes is-tnbc}\">Is TNBC Feature</span></p><p><b>subject</b>: <a href=\"Patient-Patient3.html\">Jane Patient3  Female, DoB: 1970-02-09 ( Medical Record Number:\u00a01032702\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>performer</b>: <a href=\"Practitioner-PractitionerShared.html\">Practitioner practitionershared </a></p><p><b>value</b>: true</p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://example.org/cancer-guideline/fhir/CodeSystem/CaseFeatureCodes",
+      "code" : "is-tnbc",
+      "display" : "Is TNBC Feature"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/Patient3"
+  },
+  "performer" : [{
+    "reference" : "Practitioner/PractitionerShared"
+  }],
+  "valueBoolean" : true
+}

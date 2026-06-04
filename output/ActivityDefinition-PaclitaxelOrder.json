@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "PaclitaxelOrder",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequestactivity"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<div>\n    <table class=\"grid dict\">\n\n        \n        <tr>\n            <th scope=\"row\"><b>Title: </b></th>\n            <td style=\"padding-left: 4px;\">Order Paclitaxel</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Id: </b></th>\n            <td style=\"padding-left: 4px;\">PaclitaxelOrder</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Version: </b></th>\n            <td style=\"padding-left: 4px;\">0.1.0</td>\n        </tr>\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Date (date last changed): </b></th>\n            <td style=\"padding-left: 4px;\">2026-05-19 11:49:39-0400</td>\n        </tr>\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Publisher (steward): </b></th>\n            <td style=\"padding-left: 4px;\">Example Publisher</td>\n        </tr>\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Description: </b></th>\n            <td style=\"padding-left: 4px;\"><div><p>Paclitaxel Order: Day 1 every 14 days for a cycle length of 4</p>\n</div></td>\n        </tr>\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n        \n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Kind: </b></th>\n            <td style=\"padding-left: 4px;\">MedicationRequest</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Profile: </b></th>\n            <td style=\"padding-left: 4px;\">http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Intent: </b></th>\n            <td style=\"padding-left: 4px;\">proposal</td>\n        </tr>\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>doNotPerform: </b></th>\n            <td style=\"padding-left: 4px;\">false</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Product: </b></th>\n            \n            <td style=\"padding-left: 4px;\">\n                \n                \n                \n                <p><b>system: </b><span><a href=\"https://www.nlm.nih.gov/research/umls/rxnorm/index.html\">http://www.nlm.nih.gov/research/umls/rxnorm</a></span></p>\n                \n                \n                <p><b>code: </b><span>56946</span></p>\n                \n                \n                \n                \n                \n            </td>\n            \n            \n        </tr>\n        \n\n        \n\n        \n\n        \n    </table>\n</div>\n</div>"
+  },
+  "url" : "http://example.org/cancer-guideline/fhir/ActivityDefinition/PaclitaxelOrder",
+  "version" : "0.1.0",
+  "title" : "Order Paclitaxel",
+  "status" : "active",
+  "date" : "2026-05-19T11:49:39-04:00",
+  "publisher" : "Example Publisher",
+  "contact" : [{
+    "name" : "Example Publisher",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "Paclitaxel Order: Day 1 every 14 days for a cycle length of 4 ",
+  "kind" : "MedicationRequest",
+  "profile" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest",
+  "intent" : "proposal",
+  "doNotPerform" : false,
+  "timingTiming" : {
+    "repeat" : {
+      "count" : 4,
+      "period" : 14,
+      "periodUnit" : "d"
+    }
+  },
+  "productCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "56946"
+    }]
+  }
+}

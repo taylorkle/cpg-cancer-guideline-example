@@ -1,0 +1,30 @@
+{
+  "resourceType" : "Patient",
+  "id" : "Patient2",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient Patient2</b></p><a name=\"Patient2\"> </a><a name=\"hcPatient2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/fhir-mCODE-ig/StructureDefinition-mcode-cancer-patient.html\">Cancer Patient Profile</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Jane Patient2 - Inferred features  Female, DoB: 1970-02-09 ( Medical Record Number:\u00a01032702\u00a0(use:\u00a0usual,\u00a0))</p><hr/></div>"
+  },
+  "identifier" : [{
+    "use" : "usual",
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "MR",
+        "display" : "Medical Record Number"
+      }],
+      "text" : "Medical Record Number"
+    },
+    "system" : "http://hospital.smarthealthit.org",
+    "value" : "1032702"
+  }],
+  "name" : [{
+    "family" : "Patient2 - Inferred features",
+    "given" : ["Jane"]
+  }],
+  "gender" : "female",
+  "birthDate" : "1970-02-09"
+}

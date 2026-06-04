@@ -1,0 +1,11 @@
+{
+  "codeSystems" : [{
+    "url" : "http://example.org/cancer-guideline/fhir/ValueSet/BreastCancerICD10",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "BreastCancerICD10",
+    "title" : "Breast Cancer ICD-10 ValueSet",
+    "description" : "This ValueSet includes ICD-10 codes for breast cancer.",
+    "systems" : ["http://hl7.org/fhir/sid/icd-10-cm"]
+  }]
+}
