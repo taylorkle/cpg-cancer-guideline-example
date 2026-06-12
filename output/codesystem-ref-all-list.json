@@ -45,9 +45,9 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
     "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-    "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods"
+    "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
@@ -71,8 +71,8 @@
     "oids" : ["2.16.840.1.113883.4.642.1.1125"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes",
-    "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-clinical-result-observation-category.html" : "US Core Clinical Result Observation Category"
+    "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-clinical-result-observation-category.html" : "US Core Clinical Result Observation Category",
+    "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",

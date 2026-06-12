@@ -20,10 +20,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.141"],
     "uses" : {
     },
+    "StructureDefinition-PRStatus.html" : "PRStatus",
     "StructureDefinition-IsT1cFeature.html" : "IsT1cFeature",
     "StructureDefinition-IsTNBCFeature.html" : "IsTNBCFeature",
     "StructureDefinition-HER2Status.html" : "HER2Status",
-    "StructureDefinition-PRStatus.html" : "PRStatus",
     "StructureDefinition-ERStatus.html" : "ERStatus"
   },
   {
@@ -38,10 +38,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.5"],
     "uses" : {
     },
+    "StructureDefinition-PRStatus.html" : "PRStatus",
     "StructureDefinition-IsT1cFeature.html" : "IsT1cFeature",
     "StructureDefinition-IsTNBCFeature.html" : "IsTNBCFeature",
     "StructureDefinition-HER2Status.html" : "HER2Status",
-    "StructureDefinition-PRStatus.html" : "PRStatus",
     "StructureDefinition-ERStatus.html" : "ERStatus"
   },
   {
@@ -56,10 +56,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
+    "StructureDefinition-PRStatus.html" : "PRStatus",
     "StructureDefinition-IsT1cFeature.html" : "IsT1cFeature",
     "StructureDefinition-IsTNBCFeature.html" : "IsTNBCFeature",
     "StructureDefinition-HER2Status.html" : "HER2Status",
-    "StructureDefinition-PRStatus.html" : "PRStatus",
     "StructureDefinition-ERStatus.html" : "ERStatus"
   },
   {
@@ -74,10 +74,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.403"],
     "uses" : {
     },
+    "StructureDefinition-PRStatus.html" : "PRStatus",
     "StructureDefinition-IsT1cFeature.html" : "IsT1cFeature",
     "StructureDefinition-IsTNBCFeature.html" : "IsTNBCFeature",
     "StructureDefinition-HER2Status.html" : "HER2Status",
-    "StructureDefinition-PRStatus.html" : "PRStatus",
     "StructureDefinition-ERStatus.html" : "ERStatus"
   },
   {
@@ -92,10 +92,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.396"],
     "uses" : {
     },
+    "StructureDefinition-PRStatus.html" : "PRStatus",
     "StructureDefinition-IsT1cFeature.html" : "IsT1cFeature",
     "StructureDefinition-IsTNBCFeature.html" : "IsTNBCFeature",
     "StructureDefinition-HER2Status.html" : "HER2Status",
-    "StructureDefinition-PRStatus.html" : "PRStatus",
     "StructureDefinition-ERStatus.html" : "ERStatus"
   },
   {
@@ -110,10 +110,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.399"],
     "uses" : {
     },
+    "StructureDefinition-PRStatus.html" : "PRStatus",
     "StructureDefinition-IsT1cFeature.html" : "IsT1cFeature",
     "StructureDefinition-IsTNBCFeature.html" : "IsTNBCFeature",
     "StructureDefinition-HER2Status.html" : "HER2Status",
-    "StructureDefinition-PRStatus.html" : "PRStatus",
     "StructureDefinition-ERStatus.html" : "ERStatus"
   },
   {
@@ -128,10 +128,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.395"],
     "uses" : {
     },
+    "StructureDefinition-PRStatus.html" : "PRStatus",
     "StructureDefinition-IsT1cFeature.html" : "IsT1cFeature",
     "StructureDefinition-IsTNBCFeature.html" : "IsTNBCFeature",
     "StructureDefinition-HER2Status.html" : "HER2Status",
-    "StructureDefinition-PRStatus.html" : "PRStatus",
     "StructureDefinition-ERStatus.html" : "ERStatus"
   },
   {
@@ -146,10 +146,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.400"],
     "uses" : {
     },
+    "StructureDefinition-PRStatus.html" : "PRStatus",
     "StructureDefinition-IsT1cFeature.html" : "IsT1cFeature",
     "StructureDefinition-IsTNBCFeature.html" : "IsTNBCFeature",
     "StructureDefinition-HER2Status.html" : "HER2Status",
-    "StructureDefinition-PRStatus.html" : "PRStatus",
     "StructureDefinition-ERStatus.html" : "ERStatus"
   },
   {
@@ -165,10 +165,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.407"],
     "uses" : {
     },
+    "StructureDefinition-PRStatus.html" : "PRStatus",
     "StructureDefinition-IsT1cFeature.html" : "IsT1cFeature",
     "StructureDefinition-IsTNBCFeature.html" : "IsTNBCFeature",
     "StructureDefinition-HER2Status.html" : "HER2Status",
-    "StructureDefinition-PRStatus.html" : "PRStatus",
     "StructureDefinition-ERStatus.html" : "ERStatus"
   },
   {
@@ -183,10 +183,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.397"],
     "uses" : {
     },
+    "StructureDefinition-PRStatus.html" : "PRStatus",
     "StructureDefinition-IsT1cFeature.html" : "IsT1cFeature",
     "StructureDefinition-IsTNBCFeature.html" : "IsTNBCFeature",
     "StructureDefinition-HER2Status.html" : "HER2Status",
-    "StructureDefinition-PRStatus.html" : "PRStatus",
     "StructureDefinition-ERStatus.html" : "ERStatus"
   },
   {
@@ -199,8 +199,8 @@
     "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
     "uses" : {
     },
-    "StructureDefinition-HER2Status.html" : "HER2Status",
     "StructureDefinition-PRStatus.html" : "PRStatus",
+    "StructureDefinition-HER2Status.html" : "HER2Status",
     "StructureDefinition-ERStatus.html" : "ERStatus"
   },
   {
@@ -215,8 +215,8 @@
     "sources" : ["2.16.840.1.113883.4.642.40.15.48.92"],
     "uses" : {
     },
-    "StructureDefinition-HER2Status.html" : "HER2Status",
     "StructureDefinition-PRStatus.html" : "PRStatus",
+    "StructureDefinition-HER2Status.html" : "HER2Status",
     "StructureDefinition-ERStatus.html" : "ERStatus"
   }]
 }

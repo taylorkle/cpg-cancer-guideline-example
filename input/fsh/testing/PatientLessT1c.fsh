@@ -13,18 +13,18 @@ Usage: #example
   * family = "Patient1"
   * given[0] = "Doe"
 
-// Instance: Patient1ObservationTumorSize
-// InstanceOf: $mcode-tumor-size
-// Usage: #inline
-// * status = #final
-// * category = $observation-category#laboratory
-// * code = $LOINC#21889-1 "Size Tumor"
-// * subject = Reference(Patient/Patient1)
-// * performer = Reference(PractitionerShared)
-// * method = $SCT#787377000 "Gross examination and sampling of tissue specimen (procedure)"
-// * component[tumorLongestDimension]
-//   * code = $LOINC#33728-7
-//   * valueQuantity = 0.8 'cm' "centimeters"
+Instance: Patient1ObservationTumorSize
+InstanceOf: $mcode-tumor-size
+Usage: #inline
+* status = #final
+* category = $observation-category#laboratory
+* code = $LOINC#21889-1 "Size Tumor"
+* subject = Reference(Patient/Patient1)
+* performer = Reference(PractitionerShared)
+* method = $SCT#787377000 "Gross examination and sampling of tissue specimen (procedure)"
+* component[tumorLongestDimension]
+  * code = $LOINC#33728-7
+  * valueQuantity = 1.5 'cm' "centimeters"
 
 Instance: Patient1BreastImagingReport
 InstanceOf: DiagnosticReport
@@ -36,8 +36,7 @@ Usage: #example
 * performer = Reference(PractitionerShared)
 * effectiveDateTime = "2026-05-18T09:00:00-04:00"
 * issued = "2026-05-18T10:00:00-04:00"
-// * result = Reference(Patient1ObservationTumorSize)
-* conclusion = "Right breast imaging demonstrates an irregular enhancing mass measuring up to 0.8 cm in greatest dimension."
+* conclusion = "Right breast imaging demonstrates an irregular enhancing mass measuring up to 1.5 cm in greatest dimension."
 
 Instance: Patient1HER2PathologyReport
 InstanceOf: DiagnosticReport
@@ -98,15 +97,14 @@ Usage: #example
 
 Instance: ExampleCasePatient1
 InstanceOf: Bundle
-Description: "Patient has imaging evidence of a 0.8 cm tumor size and ER, PR, and HER2-negative pathology data expressed as DocumentReference resources for LLM-based reasoning"
+Description: "Patient has imaging evidence of a 1.5 cm tumor size and ER, PR, and HER2-negative pathology data expressed as DocumentReference resources for LLM-based reasoning"
 Usage: #example
 * type = #collection
 * meta.tag = #test
 * insert BundleEntry(Patient, Patient1)
 * insert BundleEntry(Practitioner, PractitionerShared)
-// * insert BundleEntry(Observation, Patient1ObservationTumorSize)
+* insert BundleEntry(Observation, Patient1ObservationTumorSize)
 * insert BundleEntry(DiagnosticReport, Patient1BreastImagingReport)
-// * insert BundleEntry(DiagnosticReport, Patient1HER2PathologyReport)
 * insert BundleEntry(DocumentReference, Patient1ERPathologyDocument)
 * insert BundleEntry(DocumentReference, Patient1PRPathologyDocument)
 * insert BundleEntry(DocumentReference, Patient1HER2PathologyDocument)
